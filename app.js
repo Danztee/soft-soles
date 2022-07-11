@@ -149,6 +149,9 @@ function getCartbtns() {
       itemsTotal += item.amount;
     });
 
+    console.log(tempTotal);
+    localStorage.setItem('cartTotal', JSON.stringify(tempTotal));
+
     // cart total here in next page
 
     cartItems.innerText = itemsTotal;

@@ -172,7 +172,7 @@ li:hover {
 
 .bag-btn {
   position: absolute;
-  top: 80%;
+  top: 85%;
   right: 0;
   background: transparent;
   border: none;
@@ -428,19 +428,21 @@ input {
     text-align: center;
   }
   .navbar-center h3 {
-    /* padding-left: 70px; */
     position: relative;
     right: 40px;
   }
   .navs {
     position: relative;
     right: 15px;
-    /* padding: 1%; */
     gap: 10%;
   }
   .nav-icon {
     position: relative;
     left: 5px;
+  }
+
+  .bag-btn {
+    top: 80%;
   }
 
   .navbar-center .shop {
