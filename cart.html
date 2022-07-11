@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0d63ab44ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Soft Soles | Cart</title>
+  </head>
+  <body>
+    <!-- cart -->
+    <div class="header">
+      <h2>Shopping Cart</h2>
+    </div>
+    <div class="cart">
+      <div class="cart-content">
+        <!-- cart-item -->
+        <div class="bigcart">
+          <div class="cart-item">
+            <img
+              src="./images/FOI_Fall20_RiriWhiskey-2_720x 1.png"
+              alt="product"
+            />
+            <div>
+              <h4>ada</h4>
+              <h5>Black / 35</h5>
+            </div>
+            <div>
+              <p class="price">$200</p>
+              <div class="remove-item">remove</div>
+            </div>
+          </div>
+          <div class="pagination cart-footer">
+            <button data-id="prev">-</button>
+            <button data-id="1" class="active">1</button>
+            <button data-id="next">+</button>
+          </div>
+          <div class="cartborder"></div>
+        </div>
+        <!-- end of cart item -->
+      </div>
+      <p class="special">special instructions for seller</p>
+      <textarea name="" id="" cols="80" rows="10"></textarea>
+      <div class="cart-footer">
+        <div class="ship">
+          <p>shipping & taxes calculated at checkout</p>
+          <h3>Subtal : $ <span class="cart-total">200</span></h3>
+        </div>
+        <div class="payment">
+          <button class="cart-btn">continue shopping</button>
+          <button class="cart-btn black">checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of cart -->
+    <script src="cart.js"></script>
+  </body>
+</html>
