@@ -67,6 +67,12 @@ body {
   margin: 1.5rem 10;
 }
 
+.clear-cart {
+  position: relative;
+  left: 60%;
+  bottom: 20px;
+}
+
 .cartborder {
   border-bottom: solid 1px #011627;
   position: relative;
@@ -124,6 +130,10 @@ textarea {
   justify-content: space-between;
 }
 
+.none {
+  display: none;
+}
+
 .cart-btn {
   padding: 1rem 2em;
   width: 11.8em;
@@ -151,14 +161,17 @@ textarea {
   .pagination {
     bottom: 80px;
   }
-  .clear-cart {
+  /* .clear-cart {
     width: 25em;
     padding: 1.5rem 2em;
-  }
+  } */
   .special {
     display: block;
   }
   textarea {
     display: block;
+  }
+  .clear-cart {
+    left: 80%;
   }
 }

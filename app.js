@@ -21,8 +21,16 @@ about.addEventListener('click', function (e) {
 
 let productGet = JSON.parse(localStorage.getItem('EachProd'));
 
-const container = document.querySelector('.desc-container');
+const header = document.querySelector('.head');
+function headerAdd(headPage) {
+  header.innerHTML = `
+        <a href="shop.html"><h3>Womens's Flat</h3></a>
+        <span>></span>
+        <p>${headPage.title}</p>`;
+}
+headerAdd(productGet);
 
+const container = document.querySelector('.desc-container');
 function descTransfer(decsPage) {
   const div = document.createElement('div');
   div.classList.add('first-des');
@@ -114,7 +122,7 @@ const cartItems = document.querySelector('.cart-items');
 let cart = loadData('cart', []);
 function loadData(key, def) {
   var data = localStorage.getItem(key);
-  return null == data ? def : JSON.parse(data);
+  return data ? JSON.parse(data) : def;
 }
 
 const item = localStorage.getItem('cartItems');
