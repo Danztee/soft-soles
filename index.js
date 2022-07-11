@@ -29,7 +29,7 @@ async function printJSON() {
     return { title, price, id, image };
   });
   products.sort(() => Math.random() - Math.random()).slice(0, -1);
-  // console.log(products);
+
   state = {
     querySet: products,
     page: 1,
@@ -72,7 +72,7 @@ function buildTable() {
               alt="product"
               class="product-img"
           />
-          <a href="descriptionPage.html" target="_blank"> <button class="bag-btn" data-id="${
+          <a href="descriptionPage.html"> <button class="bag-btn" data-id="${
             items.id
           }">view product</button></a>
 

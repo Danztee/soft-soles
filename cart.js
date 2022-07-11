@@ -9,7 +9,6 @@ backBtn.addEventListener('click', () => {
 });
 
 let cartItem = JSON.parse(localStorage.getItem('cart'));
-console.log(cartItem);
 
 const total = localStorage.getItem('cartTotal');
 if (total !== null) {
@@ -18,10 +17,8 @@ if (total !== null) {
 
 // let item;
 cartItem.forEach(item => {
-  console.log(item);
   addcartItem(item);
 });
-// console.log(item);
 
 function addcartItem(item) {
   const div = document.createElement('div');
@@ -34,7 +31,7 @@ function addcartItem(item) {
                 />
                 <div>
                 <h4>${item.title}</h4>
-                <h5>Black / 35</h5>
+                <h5>Black / 36</h5>
                 </div>
                 <div>
                 <p class="price">$${item.price}</p>

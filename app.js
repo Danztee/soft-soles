@@ -1,6 +1,7 @@
 const about = document.querySelector('.about');
 const btns = document.querySelectorAll('.tab-btn');
 const articles = document.querySelectorAll('.content');
+
 about.addEventListener('click', function (e) {
   const id = e.target.dataset.id;
   if (id) {
@@ -19,7 +20,6 @@ about.addEventListener('click', function (e) {
 });
 
 let productGet = JSON.parse(localStorage.getItem('EachProd'));
-// console.log(productGet);
 
 const container = document.querySelector('.desc-container');
 
@@ -50,7 +50,7 @@ function descTransfer(decsPage) {
             <img src="./star.svg" alt="" />
             <img src="./star.svg" alt="" />
             <img src="./star.svg" alt="" />
-            <p>Read Reviews</p>
+            <a href="#reviews" class="revs">Read Reviews</a>
           </div>
           <div class="border-p"></div>
           <p>Black</p>
@@ -69,7 +69,7 @@ function descTransfer(decsPage) {
           </div>
           <p class="wat">What size should i order?</p>
           <div class="btn">
-            <b href="cart.html" target="_blank"><button class="prev-btn" data-id="${decsPage.id}">Add to cart+</button></b>
+            <b href="cart.html"><button class="prev-btn" data-id="${decsPage.id}">Add to cart+</button></b>
             <button class="prev-btn black">Buy it now</button>
           </div>
         </div>`;
@@ -78,7 +78,6 @@ function descTransfer(decsPage) {
 
 descTransfer(productGet);
 
-// console.log(products);
 let buttonsDom = [];
 const buttons = [...document.querySelectorAll('.bag-btn')];
 buttonsDom = buttons;
@@ -97,6 +96,17 @@ function getProduct(id) {
   return products.find(product => product.id === id);
 }
 
+const reviewsScrl = document.querySelector('.revs');
+const contentDesc = document.querySelector('.content');
+const contentrev = document.getElementById('reviews');
+
+reviewsScrl.addEventListener('click', () => {
+  document.querySelector('.somel').classList.remove('active');
+  contentDesc.classList.remove('active');
+  document.querySelector('.somer').classList.add('active');
+  contentrev.classList.add('active');
+});
+
 //  cart stuffs-------------------------------------
 const addcartBtn = document.querySelector('.prev-btn');
 const cartItems = document.querySelector('.cart-items');
@@ -113,16 +123,10 @@ if (item !== null) {
 }
 
 function getCartbtns() {
-  console.log(cart);
-
   cart.forEach(item => {
-    console.log(item.id);
     let id = addcartBtn.dataset.id;
-    console.log(id);
 
     let incart = cart.find(item => item.id === id);
-
-    console.log(incart);
 
     if (incart) {
       addcartBtn.innerText = 'In Cart';
@@ -131,12 +135,10 @@ function getCartbtns() {
   });
 
   addcartBtn.addEventListener('click', event => {
-    console.log('click');
     event.target.innerText = 'In Cart';
     event.target.disabled = true;
     // get product from eachprod
     let cartItem = { ...productGet, amount: 1 };
-    console.log(cartItem);
     // add product to cart
     cart = [...cart, cartItem];
     // save to storage
@@ -149,14 +151,9 @@ function getCartbtns() {
       itemsTotal += item.amount;
     });
 
-    console.log(tempTotal);
     localStorage.setItem('cartTotal', JSON.stringify(tempTotal));
 
-    // cart total here in next page
-
     cartItems.innerText = itemsTotal;
-    console.log(cartItems);
-
     localStorage.setItem('cartItems', JSON.stringify(itemsTotal));
   });
 }
