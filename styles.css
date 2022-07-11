@@ -473,6 +473,10 @@ input {
     position: relative;
     left: -25px;
   }
+
+  .shop {
+    margin-left: 5px;
+  }
 }
 
 footer {
