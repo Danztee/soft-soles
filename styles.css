@@ -66,7 +66,7 @@ li:hover {
 }
 
 .nav-icon i {
-  margin-top: 3px;
+  margin-top: 5px;
   font-weight: bolder;
 }
 
@@ -172,7 +172,7 @@ li:hover {
 
 .bag-btn {
   position: absolute;
-  top: 84%;
+  top: 80%;
   right: 0;
   background: transparent;
   border: none;
@@ -428,11 +428,24 @@ input {
     text-align: center;
   }
   .navbar-center h3 {
-    padding-left: 70px;
+    /* padding-left: 70px; */
+    position: relative;
+    right: 40px;
   }
   .navs {
-    padding: 1%;
-    gap: 1%;
+    position: relative;
+    right: 15px;
+    /* padding: 1%; */
+    gap: 10%;
+  }
+  .nav-icon {
+    position: relative;
+    left: 5px;
+  }
+
+  .navbar-center .shop {
+    position: relative;
+    left: 5px;
   }
 
   .product-img,
