@@ -256,13 +256,13 @@ body {
   .first-box {
     position: relative;
     right: 25%;
-    bottom: 3em;
+    bottom: 1em;
   }
 
   .second-box {
     position: absolute;
     left: 60%;
-    bottom: 8.4em;
+    bottom: 10.5em;
     right: 5%;
   }
 }

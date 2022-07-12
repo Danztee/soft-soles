@@ -51,7 +51,9 @@ function descTransfer(decsPage) {
         </div>
         <div class="second-box">
           <h3>${decsPage.title}</h3>
-          <p class="pri">$${decsPage.price}</p>
+          <p class="pri">${
+            Number(decsPage.price) ? '$' + decsPage.price : decsPage.price
+          }</p>
           <div class="star-reviews">
             <img src="./star.svg" alt="" />
             <img src="./star.svg" alt="" />
@@ -77,7 +79,9 @@ function descTransfer(decsPage) {
           </div>
           <p class="wat">What size should i order?</p>
           <div class="btn">
-            <b href="cart.html"><button class="prev-btn" data-id="${decsPage.id}">Add to cart+</button></b>
+            <b href="cart.html"><button class="prev-btn" data-id="${
+              decsPage.id
+            }">Add to cart+</button></b>
             <button class="prev-btn black">Buy it now</button>
           </div>
         </div>`;
@@ -130,6 +134,15 @@ if (item !== null) {
   cartItems.innerHTML = item;
 }
 
+let pri = document.querySelector('.pri');
+console.log(pri);
+
+if (pri.innerHTML == 'Sold Out') {
+  // console.log('oh sold');
+  addcartBtn.innerText = 'Sold Out';
+  addcartBtn.disabled = true;
+}
+
 function getCartbtns() {
   cart.forEach(item => {
     let id = addcartBtn.dataset.id;
@@ -140,6 +153,8 @@ function getCartbtns() {
       addcartBtn.innerText = 'In Cart';
       addcartBtn.disabled = true;
     }
+
+    // let soldout = cart.
   });
 
   addcartBtn.addEventListener('click', event => {

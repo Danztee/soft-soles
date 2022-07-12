@@ -13,22 +13,47 @@
     <title>Soft Soles</title>
   </head>
   <body>
-    <!-- navbar -->
-    <div class="navbar">
-      <div class="navbar-center">
-        <div class="shop"><a href="shop.html">shop</a></div>
-        <h3><a href="index.html">soft.soles</a></h3>
-        <div class="navs">
-          <li><a href="">sign in</a></li>
+    <!-- navs -->
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html"><h1 class=".logo">Soft.Soles</h1></a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <article class="move">
+            <li>
+              <a href="index.html" class="border">home</a>
+            </li>
+            <li>
+              <a href="shop.html">shop</a>
+            </li>
+            <li>
+              <a href="">features</a>
+            </li>
+            <li>
+              <a href="">blog</a>
+            </li>
+            <li>
+              <a href="">contact us</a>
+            </li>
+          </article>
+          <!-- login stuffs -->
+          <li>
+            <a href="">sign in</a>
+          </li>
           <li>
             <a href="cart.html">cart (<span class="cart-items">0</span>)</a>
           </li>
-          <span class="nav-icon">
+          <li class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <!-- end of nav-->
     <!-- small box -->
     <div class="small-box"></div>
@@ -205,5 +230,6 @@
       </p>
     </footer>
     <script src="index.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>

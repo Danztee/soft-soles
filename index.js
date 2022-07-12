@@ -4,11 +4,6 @@ let products;
 let state;
 let buttonsDom = [];
 
-let shop = document.querySelector('.shop');
-shop.addEventListener('click', () => {
-  console.log('click');
-});
-
 async function getData() {
   try {
     const response = await fetch('products.json');

@@ -347,7 +347,7 @@
       "sys": { "id": "27" },
       "fields": {
         "title": "Asha",
-        "price": "Sold out",
+        "price": "Sold Out",
         "image": {
           "fields": {
             "file": { "url": "./products/Rectangle--61(1).png" }
