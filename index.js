@@ -4,6 +4,11 @@ let products;
 let state;
 let buttonsDom = [];
 
+let shop = document.querySelector('.shop');
+shop.addEventListener('click', () => {
+  console.log('click');
+});
+
 async function getData() {
   try {
     const response = await fetch('products.json');
@@ -120,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const cartItems = document.querySelector('.cart-items');
-const item = localStorage.getItem('cartItems');
+const item = localStorage.getItem('cartLength');
 if (item !== null) {
   cartItems.innerHTML = item;
 }

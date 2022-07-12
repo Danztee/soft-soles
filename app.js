@@ -125,7 +125,7 @@ function loadData(key, def) {
   return data ? JSON.parse(data) : def;
 }
 
-const item = localStorage.getItem('cartItems');
+const item = localStorage.getItem('cartLength');
 if (item !== null) {
   cartItems.innerHTML = item;
 }
@@ -145,25 +145,23 @@ function getCartbtns() {
   addcartBtn.addEventListener('click', event => {
     event.target.innerText = 'In Cart';
     event.target.disabled = true;
-    // get product from eachprod
     let cartItem = { ...productGet, amount: 1 };
-    // add product to cart
     cart = [...cart, cartItem];
-    // save to storage
     localStorage.setItem('cart', JSON.stringify(cart));
-    // set cart values
-    let tempTotal = 0;
-    let itemsTotal = 0;
-    cart.map(item => {
-      tempTotal += item.price * item.amount;
-      itemsTotal += item.amount;
-    });
-
-    localStorage.setItem('cartTotal', JSON.stringify(tempTotal));
-
-    cartItems.innerText = itemsTotal;
-    localStorage.setItem('cartItems', JSON.stringify(itemsTotal));
+    setcartvalues(cart);
   });
+}
+
+function setcartvalues() {
+  let tempTotal = 0;
+  let itemsTotal = 0;
+  cart.map(item => {
+    tempTotal += item.price * item.amount;
+    itemsTotal += item.amount;
+  });
+  localStorage.setItem('cartTotal', JSON.stringify(tempTotal));
+  cartItems.innerText = itemsTotal;
+  localStorage.setItem('cartLength', JSON.stringify(itemsTotal));
 }
 
 getCartbtns();

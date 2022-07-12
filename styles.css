@@ -432,13 +432,22 @@ input {
   }
   .navbar-center h3 {
     position: relative;
-    right: 40px;
+    right: 50px;
   }
   .navs {
     position: relative;
     right: 15px;
     gap: 10%;
   }
+
+  .shop {
+    margin-left: 5px;
+  }
+
+  /* .navbar-center h3 {
+    margin-right: 50px;
+  } */
+
   .nav-icon {
     position: relative;
     left: 5px;
@@ -472,10 +481,6 @@ input {
   .social ul {
     position: relative;
     left: -25px;
-  }
-
-  .shop {
-    margin-left: 5px;
   }
 }
 

@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const cartItems = document.querySelector('.cart-items');
-const item = localStorage.getItem('cartItems');
+const item = localStorage.getItem('cartLength');
 if (item !== null) {
   cartItems.innerHTML = item;
 }
