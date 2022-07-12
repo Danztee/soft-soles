@@ -71,9 +71,9 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
 }
-.links a:hover {
+/* .links a:hover {
   padding-left: 1.5rem;
-}
+} */
 
 /* BY DEFAULT HIDE LINKS */
 .links {
@@ -241,7 +241,7 @@ nav {
 
 .bag-btn {
   position: absolute;
-  top: 85%;
+  top: 81%;
   right: 0;
   background: transparent;
   border: none;
