@@ -92,6 +92,7 @@ function pageButtons(pages) {
 
   $('.page').on('click', function () {
     $('#table-body').empty();
+    window.scrollTo(0, 0);
 
     state.page = Number($(this).val());
 
