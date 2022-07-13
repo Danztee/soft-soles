@@ -71,9 +71,6 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
 }
-/* .links a:hover {
-  padding-left: 1.5rem;
-} */
 
 /* BY DEFAULT HIDE LINKS */
 .links {
@@ -113,17 +110,18 @@ nav {
     height: auto;
     display: flex;
   }
+
   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    text-align: center;
   }
   .links a:hover {
     padding: 0;
     background: transparent;
   }
   .move {
-    /* position: relative; */
-    margin-right: 11em;
+    margin-right: 3em;
     display: flex;
     height: auto;
   }
@@ -136,6 +134,12 @@ nav {
   }
   .login-stuffs a {
     color: #011627;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .move {
+    margin-right: 10em;
   }
 }
 
