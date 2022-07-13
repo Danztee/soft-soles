@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://kit.fontawesome.com/0d63ab44ae.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navs -->
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html"><h1 class=".logo">Soft.Soles</h1></a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <article class="move">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="shop.html">shop</a>
+            </li>
+            <li>
+              <a href="">features</a>
+            </li>
+            <li>
+              <a href="">blog</a>
+            </li>
+            <li>
+              <a href="">contact us</a>
+            </li>
+          </article>
+          <!-- login stuffs -->
+          <li>
+            <a href="login.html" class="border">Login</a>
+          </li>
+          <li>
+            <a href="cart.html">cart (<span class="cart-items">0</span>)</a>
+          </li>
+          <li class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of nav-->
+    <header>
+      <h2>Login</h2>
+      <div class="border"></div>
+    </header>
+
+    <form action="/action_page.php" class="form">
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" value="" /><br />
+      <label for="Password">Password:</label><br />
+      <input
+        type="password"
+        id="Password"
+        name="Password"
+        value=""
+      /><br /><br />
+      <p class="forgot">forgot password?</p>
+      <input type="submit" value="Submit" class="submit" />
+      <p class="create"><a href="">Create account</a></p>
+    </form>
+    <script src="nav.js"></script>
+  </body>
+</html>
