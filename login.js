@@ -6,7 +6,6 @@ const frgtbtn = document.querySelector('.forgot');
 const bck = document.querySelector('.back');
 
 createAccount.addEventListener('click', e => {
-  console.log(btn);
   createAccount.classList.add('hide');
   showCreate.classList.remove('hide');
   head.innerHTML = 'Create Account';
