@@ -17,7 +17,7 @@ body {
 }
 
 .form label {
-  margin-right: 19em;
+  margin-right: 23em;
 }
 
 .form {
@@ -27,7 +27,7 @@ body {
 }
 .forgot {
   margin-left: 15.5em;
-  /* position: relative; */
+  position: relative;
   bottom: 2em;
   cursor: pointer;
 }
@@ -38,12 +38,13 @@ body {
 }
 
 .submit {
-  position: relative;
+  /* position: relative; */
   max-width: 100px;
   height: 35px;
   background-color: #011627;
   color: #fff;
   border: none;
+  margin-right: 20em;
   cursor: pointer;
   border-radius: 5px;
   right: 10.4em;
