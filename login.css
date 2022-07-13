@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  padding: 20px;
   color: #00101d;
 }
 
@@ -23,11 +22,12 @@ body {
 }
 
 .form {
+  padding: 20px;
   text-align: center;
   font-family: 'Open Sans';
 }
 .forgot {
-  margin-left: 17em;
+  margin-left: 16em;
 }
 
 .create a {
@@ -38,7 +38,7 @@ body {
 .submit {
   max-width: 100px;
   position: relative;
-  margin-right: 22em;
+  margin-right: 21em;
   background-color: #011627;
   color: #fff;
   border: none;
