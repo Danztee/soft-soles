@@ -56,12 +56,17 @@
     </nav>
     <!-- end of nav-->
     <header>
-      <h2>Login</h2>
+      <h2 class="changehead">Login</h2>
       <div class="border"></div>
     </header>
 
     <form action="/action_page.php" class="form">
-      <label for="email">Email:</label><br />
+      <div class="hide" id="createAcc">
+        <label for="fname">Full Name:</label><br />
+        <input type="fname" name="fname" value="" /><br />
+      </div>
+
+      <label for="email" id="emailo">Email:</label><br />
       <input type="email" id="email" name="email" value="" /><br />
       <label for="Password">Password:</label><br />
       <input
@@ -71,9 +76,12 @@
         value=""
       /><br /><br />
       <p class="forgot">forgot password?</p>
-      <input type="submit" value="Submit" class="submit" />
-      <p class="create"><a href="">Create account</a></p>
+      <input class="submit" type="submit" value="Login"></input>
     </form>
+
+    <p class="createAcct" id="create">Create account</p>
+    <p class="createAcct back hide"><a href="shop.html">Back to store</a></p>
+
     <!-- newsletter -->
     <section class="newsl">
       <div class="connect">
@@ -139,5 +147,6 @@
       </p>
     </footer>
     <script src="nav.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

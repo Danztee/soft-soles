@@ -10,15 +10,18 @@ body {
 .form input {
   width: 380px;
   height: 35px;
-  margin-top: 30px;
   outline: none;
   padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .form label {
-  position: relative;
-  right: 9em;
-  top: 25px;
+  margin-right: 19em;
+}
+
+#emailo {
+  margin-left: -2em;
 }
 
 .form {
@@ -27,42 +30,77 @@ body {
   font-family: 'Open Sans';
 }
 .forgot {
-  margin-left: 16em;
+  margin-left: 15.5em;
+  position: relative;
+  bottom: 2em;
+  cursor: pointer;
 }
 
-.create a {
+.createAcct a {
   text-decoration: none;
   color: #00101d;
 }
 
 .submit {
-  max-width: 100px;
   position: relative;
-  margin-right: 21em;
+  max-width: 100px;
+  height: 35px;
   background-color: #011627;
   color: #fff;
   border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  right: 10.4em;
 }
 
-.create {
-  position: relative;
-  bottom: 27px;
-  right: 1em;
+.createAcct {
+  cursor: pointer;
+  text-align: center;
+  margin-top: -75px;
+}
+
+.newsl {
+  margin-top: 5em;
+}
+
+.hide {
+  display: none;
 }
 
 header {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 7em;
+  margin-bottom: 1em;
 }
 header h2 {
   font-weight: 700;
   color: #00101d;
 }
 
+#name {
+  position: relative;
+  bottom: 9em;
+}
+
 @media screen and (min-width: 800px) {
   header .border {
     width: 40px;
     position: relative;
-    left: 40px;
+    left: 45px;
+  }
+  .form input {
+    width: 500px;
+  }
+  .form label {
+    margin-right: 26em;
+  }
+  .submit {
+    right: 15em;
+  }
+  .createAcct {
+    margin-right: 10em;
+  }
+  .forgot {
+    margin-left: 23em;
   }
 }
