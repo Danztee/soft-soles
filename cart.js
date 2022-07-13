@@ -126,7 +126,6 @@ cartContent.addEventListener('click', e => {
       cartContent.removeChild(eachChild);
       removeItem(id);
       setcartvalues();
-      clearCartBtn.classList.add('none');
     }
   }
 });

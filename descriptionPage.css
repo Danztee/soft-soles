@@ -1,3 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #011627;
@@ -30,6 +37,8 @@ body {
 .product-desc {
   width: 340px;
   height: 360px;
+  position: relative;
+  right: 1em;
 }
 
 .product-img {
@@ -141,7 +150,6 @@ body {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
   border-bottom: solid 1px black;
 }
 
@@ -162,6 +170,9 @@ body {
 
 .about-content p {
   margin-top: 20px;
+}
+.somel {
+  margin-right: 1em;
 }
 
 /* hide content */
@@ -242,27 +253,24 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .somel {
-    margin-left: 20em;
-  }
-  .somer {
-    margin-right: 20em;
-  }
-  .about {
-    margin-top: 5em;
-    overflow: hidden;
-  }
-
   .first-box {
     position: relative;
     right: 25%;
     bottom: 1em;
   }
 
+  .somel {
+    margin-right: 1em;
+  }
+
   .second-box {
-    position: absolute;
-    left: 60%;
-    bottom: 10.5em;
-    right: 5%;
+    margin-left: 55%;
+    max-width: 600px;
+    margin-top: -26.5em;
+  }
+
+  .btn {
+    position: relative;
+    z-index: 1;
   }
 }

@@ -79,9 +79,9 @@ function descTransfer(decsPage) {
           </div>
           <p class="wat">What size should i order?</p>
           <div class="btn">
-            <b href="cart.html"><button class="prev-btn" data-id="${
+            <button class="prev-btn" data-id="${
               decsPage.id
-            }">Add to cart+</button></b>
+            }">Add to cart+</button>
             <button class="prev-btn black">Buy it now</button>
           </div>
         </div>`;
@@ -135,7 +135,6 @@ if (item !== null) {
 }
 
 let pri = document.querySelector('.pri');
-console.log(pri);
 
 if (pri.innerHTML == 'Sold Out') {
   // console.log('oh sold');
